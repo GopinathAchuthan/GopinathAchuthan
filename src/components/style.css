@@ -1,7 +1,4 @@
-*, :after, :before {
-    box-sizing: border-box;
-}
-
+/*Navigation*/
 .nav-box {
 	display: flex;
 	justify-content: flex-end;
@@ -12,6 +9,36 @@
 	cursor: pointer;
 }
 
+/*Home*/
+.home {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.circular--square {
+  border-radius: 50%;
+}
+
+.size {
+	width: 320px;
+	height: auto;
+}
+
+/*Projects*/
+.card {
+	border-width: 3px;
+	border-style: solid;
+	padding: 5px
+}
+
+.project-logo {
+	width: 200px;
+	height: 200px;
+}
+
+/*Footer*/
 .footer {
 	background-color: #333;
 }
@@ -19,52 +46,4 @@
 .social-link {
 	display: flex;
 	flex-direction: row;
-}
-
-a {
-    text-decoration: none;
-    color: #515151;
-}
-
-a:before {
-   font-family: "Font Awesome 5 Free";
-   content: "\f095";
-   display: inline-block;
-   padding-right: 3px;
-   vertical-align: middle;
-   font-weight:900;
-}
-
-.fa {
-	display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-.fa-inverse {
-    color: #fff;
-}
-
-.fa-linkedin:before {
-	content: "\f055";
-    font-family: FontAwesome;
-    left:0;
-    top:0;
-/*content: '\f0e1';*/
-}
-
-.fa-github:before {
-	content: '\f09b';
-	font-family: FontAwesome;
-    left:0;
-    top:0;
-}
-
-.fa-twitter:before {
-	content: '\f099';
-	font-family: FontAwesome;
-    left:0;
-    top:0;
 }

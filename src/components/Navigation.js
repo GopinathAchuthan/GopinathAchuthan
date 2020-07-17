@@ -7,7 +7,7 @@ const Navigation = ({ onRouteChange }) => {
 			<p onClick={() => onRouteChange('home')} className = 'navigation'>Home</p>
 			<p onClick={() => onRouteChange('projects')} className = 'navigation'>Projects</p>
 		</div>
-	)
+	);
 }
 
 

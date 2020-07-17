@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import ProjectDetails from './ProjectDetails'
 import Navigation from '../components/Navigation';
 import Home from '../components/Home';
 import Projects from '../components/Projects';
@@ -15,7 +16,6 @@ class App extends Component {
 	}
 
 	onRouteChange = (route) => {
-		console.log(route);
 		this.setState({route});
 	}
 
@@ -24,7 +24,7 @@ class App extends Component {
 		return (
 			<div className = 'container'>
 		    <Navigation onRouteChange = {this.onRouteChange} />
-		    {route === 'home' ? <Home /> : <Projects /> }
+		    {route === 'home' ? <Home /> : <Projects projectDetails={ProjectDetails}/> }
 		    <Footer />
 		    </div>
 		);
