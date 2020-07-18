@@ -1,11 +1,21 @@
 /*Navigation*/
+/*#ececec*/
+/*#fcfcfc*/
+/*#cfcfcf*/
 .nav-box {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
+	padding-right: 10px;
+	border: none;
+	margin: 2px;
+	border-bottom-style: solid;
+	border-color: #333;
+	background-color: #767575
 }
 
 .navigation {
-	padding: 3px;
+	padding: 10px;
 	cursor: pointer;
 }
 
@@ -39,8 +49,10 @@
 }
 
 /*Footer*/
-.footer {
+footer {
+	/*position: absolute;*/
 	background-color: #333;
+	color: #fff;
 }
 
 .social-link {

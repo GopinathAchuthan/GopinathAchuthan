@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const ProjectCard = ({id, title, git_url, live_url, img_path}) => {
+const ProjectCard = ({id, title, git_url, live_url, img_path, description}) => {
 	if (live_url.length !== 0) {
 		return (
 			<div className='card'>
@@ -9,6 +9,7 @@ const ProjectCard = ({id, title, git_url, live_url, img_path}) => {
 				<p>Title: {title}</p>
 				<p>Git URL: {git_url}</p>
 				<p>Live URL: {live_url}</p>
+				<p>Description: {description}</p>
 				<img src={img_path} alt='projectimg' className='project-logo'/>
 			</div>
 		)
@@ -18,6 +19,7 @@ const ProjectCard = ({id, title, git_url, live_url, img_path}) => {
 				<p>ID: {id}</p>
 				<p>Title: {title}</p>
 				<p>Git URL: {git_url}</p>
+				<p>Description: {description}</p>
 				<img src={img_path} alt='projectimg' className='project-logo' />
 			</div>
 		);

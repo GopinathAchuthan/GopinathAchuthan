@@ -15,6 +15,7 @@ const Projects = ({ projectDetails }) => {
 							git_url={project.git_url}
 							live_url={project.live_url}
 							img_path={project.img_path}
+							description={project.description}
 						/>
 					);
 				})

@@ -3,7 +3,7 @@ import './style.css';
 import '../font awesome/css/font-awesome.min.css'
 const Footer = () => {
 	return (
-		<div className = 'footer'>
+		<footer>
 			<div className="social-links">
 		        <a href="#!" target="_blank">
 		        	<i className="fa fa-linkedin fa-inverse"></i>
@@ -16,7 +16,7 @@ const Footer = () => {
 		        </a>
         	</div>
 			<p>Developed by Gopinath Achuthan</p>
-		</div>
+		</footer>
 	)
 }
 
