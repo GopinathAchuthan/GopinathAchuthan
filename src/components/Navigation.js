@@ -4,8 +4,9 @@ import './style.css';
 const Navigation = ({ onRouteChange }) => {
 	return (
 		<div className = 'nav-box'>
-			<p onClick={() => onRouteChange('home')} className = 'navigation'>Home</p>
-			<p onClick={() => onRouteChange('projects')} className = 'navigation'>Projects</p>
+			<p onClick={() => onRouteChange('home')} className='navigation'>Home</p>
+			<p onClick={() => onRouteChange('work')} className='navigation'>Work</p>
+			<p className='navigation'>Contact</p>
 		</div>
 	);
 }

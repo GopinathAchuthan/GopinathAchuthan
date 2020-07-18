@@ -4,7 +4,7 @@ import './style.css';
 
 const Projects = ({ projectDetails }) => {
 	return (
-		<div>
+		<div className='projects'>
 			{
 				projectDetails.map((project, i) => {
 					return (
